@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .listbox {
+            height: 300px;
+            width: 300px;
+            border: 5px solid yellowgreen;
+        }
+
+        .text-box {
+            height: 100px;
+            width: 200px;
+            border: 5px solid black;
+        }
+
+        .active {
+            background: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--    左侧-->
+    <div class="listbox left-listbox"></div>
+    <!--移动按钮-->
+    <div>
+        <button class="button button-left" data-action="button-left">左</button>
+        <button class="button button-right" data-action="button-right">右</button>
+    </div>
+    <!--OK按钮和显示框-->
+    <div>
+        <div class="text-box"></div>
+        <button class="button button-ok" data-action="button-ok">OK</button>
+    </div>
+    <!--    右侧-->
+    <div class="listbox right-listbox"></div>
+</div>
+<script src="listbox.js"></script>
+</body>
+</html>
